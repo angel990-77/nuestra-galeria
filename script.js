@@ -6,7 +6,7 @@ function login() {
   let user = document.getElementById("user").value;
   let pass = document.getElementById("pass").value;
 
-  if (user === "vicky1" && pass === "vicky1") {
+  if (user === "nuestra.galeria" && pass === "vicky.angel") {
     document.querySelector(".login").classList.add("hidden");
     document.querySelector(".app").classList.remove("hidden");
   } else {
