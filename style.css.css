@@ -1,20 +1,23 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #111;
   color: white;
   text-align: center;
 }
 
-/* Login */
+/* CONTENEDORES */
 .login, .app {
   margin-top: 100px;
+  transition: 0.5s;
 }
 
+/* CLAVE PARA QUE FUNCIONE */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
+/* INPUTS */
 input {
   display: block;
   margin: 10px auto;
@@ -29,7 +32,7 @@ input {
   transition: 0.3s;
 }
 
-/* RGB efecto */
+/* EFECTO RGB */
 input:focus {
   animation: rgb 1s infinite;
 }
@@ -42,6 +45,7 @@ input:focus {
   100% { box-shadow: 0 0 10px red; }
 }
 
+/* BOTONES */
 button {
   padding: 10px 20px;
   border: none;
@@ -49,9 +53,14 @@ button {
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Galería */
+button:hover {
+  background: #333;
+}
+
+/* GALERÍA */
 #gallery img {
   width: 150px;
   margin: 10px;
