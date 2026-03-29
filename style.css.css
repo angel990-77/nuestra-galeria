@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+/* Login */
+.login, .app {
+  margin-top: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+  box-shadow: 0 0 10px red;
+  transition: 0.3s;
+}
+
+/* RGB efecto */
+input:focus {
+  animation: rgb 1s infinite;
+}
+
+@keyframes rgb {
+  0% { box-shadow: 0 0 10px red; }
+  25% { box-shadow: 0 0 10px blue; }
+  50% { box-shadow: 0 0 10px green; }
+  75% { box-shadow: 0 0 10px purple; }
+  100% { box-shadow: 0 0 10px red; }
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Galería */
+#gallery img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}

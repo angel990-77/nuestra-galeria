@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>App Cloudinary Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login">
+  <h2>Login</h2>
+  <input type="text" id="user" placeholder="Usuario">
+  <input type="password" id="pass" placeholder="Contraseña">
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div class="app hidden">
+  <h2>Subir Imagen</h2>
+
+  <input type="file" id="file">
+  <button onclick="upload()">Subir</button>
+
+  <h3>Cambiar fondo</h3>
+  <input type="file" id="bgFile">
+  <button onclick="cambiarFondo()">Aplicar Fondo</button>
+
+  <div id="gallery"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
